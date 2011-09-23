@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="edu.calpoly.cpe409.fridgereminder" android:versionCode="15"
+	android:versionName="beta6">
+	<application android:label="@string/app_name"
+		android:debuggable="true" android:icon="@drawable/icon" android:name="FridgeReminderApp">
+		<activity android:name=".FridgeReminder" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ScannerActivity"
+			android:screenOrientation="landscape"></activity>
+
+		<activity android:label="Add Item" android:name="AddItemActivity"></activity>
+		<activity android:name=".FridgeReminderPreferences"></activity>
+		<activity android:name=".AddItemHistoryActivity"
+			android:label="@string/add_item_history_name"></activity>
+		<receiver android:name=".FridgeNotificationManager">
+			<intent-filter>
+				<action android:name="edu.calpoly.cpe409.fridgereminder.action.UPDATE_ITEMS" />
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+	</application>
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-sdk android:minSdkVersion="7"></uses-sdk>
+</manifest> 

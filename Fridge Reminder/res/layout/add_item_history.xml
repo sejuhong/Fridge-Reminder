@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:textColor="#FF000000" android:background="#FFF0FFF0"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent">
+	<TableLayout android:layout_marginTop="4dp"
+		android:stretchColumns="0,1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow>
+			<Button android:text="Add" android:id="@+id/NewItemButton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="Scan" android:id="@+id/NewItemScanButton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</TableRow>
+	</TableLayout>
+	<TextView android:id="@+id/HistoryLabel" android:text="Product History"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="#66000000" android:textSize="14sp"
+		android:textColor="#F0FFFFFF" android:textStyle="bold"
+		android:shadowColor="#FF000000" android:shadowDx="1.0"
+		android:shadowDy="1.0" android:shadowRadius="1.0" android:padding="5dp">
+	</TextView>
+	<ListView android:id="@+id/HistoryListView"
+		android:cacheColorHint="#FFF0FFF0" android:fastScrollEnabled="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></ListView>
+	<FrameLayout android:id="@+id/HistoryEmptyText"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:textColor="#FF000000" android:background="#FFF0FFF0">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/history_empty_text" />
+		</RelativeLayout>
+	</FrameLayout>
+</LinearLayout>

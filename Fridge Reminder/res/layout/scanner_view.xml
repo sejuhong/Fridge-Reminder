@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/FrameLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<SurfaceView android:id="@+id/SurfaceView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+	<edu.calpoly.cpe409.fridgereminder.HUDView
+		android:id="@+id/HUD" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+	<TextView android:id="@+id/HUDStatusText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center" android:layout_marginTop="5dip"
+		android:textSize="28sp" android:visibility="visible" android:maxLines="2" />
+
+	<Button android:text="Submit" android:id="@+id/ScanSubmitButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="right"></Button>
+</FrameLayout>

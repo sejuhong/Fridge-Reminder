@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="guide_crosshairs">#8000FF00</color> <!-- #FF58D558 -->
+	<color name="guide_extent">#FFE61E1E</color>
+	<color name="guide_mask_dark">#50000000</color>
+	<color name="guide_mask_light">#20000000</color>
+</resources>

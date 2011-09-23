@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen android:key="notification_preference"
+		android:title="Notification Settings">
+		<PreferenceCategory android:title="Expiration Notifications">
+			<ListPreference android:key="@string/pref_hour_of_day"
+				android:title="Notification Hour" android:summary="The hour of the day to check fridge items."
+				android:entries="@array/time_preferences" android:entryValues="@array/time_preferences_values"
+				android:defaultValue="0">
+			</ListPreference>
+		</PreferenceCategory>
+		<PreferenceCategory android:title="Warning Notifications">
+			<ListPreference android:key="@string/pref_days_before"
+				android:title="Days Before"
+				android:summary="The number of days in advance to warn you about expired food."
+				android:entries="@array/days_preferences" android:entryValues="@array/days_preferences"
+				android:defaultValue="1">
+			</ListPreference>
+		</PreferenceCategory>
+	</PreferenceScreen>
+	<PreferenceScreen android:key="display_preference"
+		android:title="Display Settings">
+		<PreferenceCategory android:title="Item Sorting">
+			<ListPreference android:key="@string/pref_display_sort"
+				android:title="Sort By" android:summary="How fridge items are sorted."
+				android:entries="@array/sort_preferences" android:entryValues="@array/sort_preferences_values"
+				android:defaultValue="expiration_date">
+			</ListPreference>
+			<ListPreference android:key="@string/pref_display_sort_order"
+				android:title="Sort Order" android:summary="Whether to sort up or down."
+				android:entries="@array/sort_order_preferences" android:entryValues="@array/sort_order_preferences_values"
+				android:defaultValue="desc">
+			</ListPreference>
+		</PreferenceCategory>
+	</PreferenceScreen>
+</PreferenceScreen>

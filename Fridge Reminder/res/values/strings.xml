@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pref_hour_of_day">PREF_NOTIFICATION_HOUR</string>
+	<string name="pref_days_before">PREF_DAYS_BEFORE</string>
+	<string name="pref_display_sort">PREF_SORT_TYPE</string>
+	<string name="pref_display_sort_order">PREF_SORT_ORDER</string>
+	<string-array name="sort_order_preferences">
+		<item>Up</item>
+		<item>Down</item>
+	</string-array>
+	<string-array name="sort_order_preferences_values">
+		<item>ASC</item>
+		<item>DESC</item>
+	</string-array>
+	<string-array name="sort_preferences">
+		<item>Expiration Date</item>
+		<item>Purchase Date</item>
+		<item>Item Name</item>
+		<item>Category</item>
+		<item>Item Count</item>
+	</string-array>
+	<string-array name="sort_preferences_values">
+		<item>expiration_date</item>
+		<item>bought_date</item>
+		<item>name</item>
+		<item>catName</item>
+		<item>count</item>
+	</string-array>
+	<string-array name="time_preferences">
+		<item>12:00 AM</item>
+		<item>1:00 AM</item>
+		<item>2:00 AM</item>
+		<item>3:00 AM</item>
+		<item>4:00 AM</item>
+		<item>5:00 AM</item>
+		<item>6:00 AM</item>
+		<item>7:00 AM</item>
+		<item>8:00 AM</item>
+		<item>9:00 AM</item>
+		<item>10:00 AM</item>
+		<item>11:00 AM</item>
+		<item>12:00 PM</item>
+		<item>1:00 PM</item>
+		<item>2:00 PM</item>
+		<item>3:00 PM</item>
+		<item>4:00 PM</item>
+		<item>5:00 PM</item>
+		<item>6:00 PM</item>
+		<item>7:00 PM</item>
+		<item>8:00 PM</item>
+		<item>9:00 PM</item>
+		<item>10:00 PM</item>
+		<item>11:00 PM</item>
+	</string-array>
+	<string-array name="time_preferences_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+		<item>15</item>
+		<item>16</item>
+		<item>17</item>
+		<item>18</item>
+		<item>19</item>
+		<item>20</item>
+		<item>21</item>
+		<item>22</item>
+		<item>23</item>
+	</string-array>
+	<string-array name="days_preferences">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+	</string-array>
+	<string name="hello">Hello World, FridgeReminder!</string>
+	<string name="app_name">Fridge Reminder</string>
+	<string name="expiration_database_url">http://cbxzcm.org/fridgereminder/LookUp</string>
+	<string-array name="categories">
+		<item>Fruit</item>
+		<item>Vegetables</item>
+		<item>Dairy</item>
+		<item>Meat</item>
+		<item>Fish</item>
+		<item>Bread and Cereal</item>
+		<item>Packaged Food and Mixes</item>
+		<item>Poultry And Eggs</item>
+		<item>None</item>
+	</string-array>
+	<string name="scanner_focus_status_text">Focusing...</string>
+	<string name="scanner_default_text">Tap screen to scan</string>
+	<string name="scanner_ocr_url_1">http://maggie.ocrgrid.org/cgi-bin/weocr/ocr_scene.cgi
+	</string>
+	<string name="scanner_ocr_url_2">http://maggie.ocrgrid.org/cgi-bin/weocr/submit_tesseract.cgi
+	</string>
+	<string name="scanner_result_text">Scan Results</string>
+	<string name="scanner_doing_ocr_text">Performing OCR...</string>
+	<string name="scanner_ocr_error_text">OCR Error</string>
+	<string name="scanner_ocr_error_host">Problem connecting to OCR server</string>
+	<string name="error_add_item_no_date">Expiration date not set</string>
+	<string name="error_add_item_invalid_count">Item count is invalid</string>
+	<string name="error_add_item_bad_expiration">Error! Expiration occurs before purchase date
+	</string>
+	<string name="main_help_text">Press "Menu" to begin!</string>
+	<string name="dialog_scan_instructions">You can scan products one line at a time from a
+		receipt.\n\n1. Place item in the view finder. You can use the left and
+		right directions on the mouse pad to adjust the view finder\'s
+		width.\n\n2. Tap the screen or press center on the mouse pad to begin
+		scanning.\n\n3. After scanning 1 or more products, press the submit
+		button on the top right to add the items to your fridge.</string>
+	<string name="dialog_unsupported_device">The software/hardware configuration of your device
+		is unsupported in this preview release of Fridge Reminder. This will
+		be addressed in upcoming versions. Sorry for the inconvenience!
+	</string>
+	<string name="history_empty_text">Your product history is empty!</string>
+	<string name="add_item_history_name">Add New Product</string>
+	<string-array name="scan_types">
+		<item>From Barcode</item>
+		<item>From Receipt (Experimental)</item>
+	</string-array>
+</resources>

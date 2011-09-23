@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbarAlwaysDrawVerticalTrack="false"
+	android:scrollbarStyle="outsideInset">
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/ItemNameLabel"
+			android:text="Item Name:"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:imeOptions="actionDone" android:layout_below="@+id/ItemNameLabel"
+			android:id="@+id/ItemNameEditText" android:layout_width="fill_parent"></EditText>
+		<TextView android:id="@+id/PurchaseDateLabel"
+			android:layout_width="wrap_content" android:layout_below="@+id/ItemNameEditText"
+			android:layout_height="wrap_content" android:text="Purchase Date (Optional):"></TextView>
+		<Button android:layout_width="fill_parent"
+			android:layout_below="@+id/PurchaseDateLabel" android:layout_height="wrap_content"
+			android:id="@+id/PurchaseDateButton"></Button>
+		<TextView android:id="@+id/ExpirationDateLabel"
+			android:layout_width="wrap_content" android:layout_below="@+id/PurchaseDateButton"
+			android:layout_height="wrap_content" android:text="Expiration  Date:"></TextView>
+		<Button android:text="" android:layout_width="fill_parent"
+			android:layout_below="@+id/ExpirationDateLabel"
+			android:layout_height="wrap_content" android:id="@+id/ExpirationDateButton"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_below="@+id/ExpirationDateButton" android:id="@+id/LookupButton"
+			android:layout_height="wrap_content" android:text="Look Up"
+			android:layout_alignRight="@+id/ExpirationDateButton"></Button>
+		<TextView android:id="@+id/ItemCountLabel"
+			android:layout_width="wrap_content" android:layout_below="@+id/LookupButton"
+			android:layout_height="wrap_content" android:text="Item Count:"></TextView>
+		<EditText android:layout_width="fill_parent"
+			android:layout_below="@+id/ItemCountLabel" android:layout_height="wrap_content"
+			android:id="@+id/ItemCountEditText" android:inputType="number"></EditText>
+		<TextView android:id="@+id/CategoryLabel"
+			android:layout_width="wrap_content" android:layout_below="@+id/ItemCountEditText"
+			android:layout_height="wrap_content" android:text="Category:"></TextView>
+		<Spinner android:layout_width="fill_parent"
+			android:layout_below="@+id/CategoryLabel" android:layout_height="wrap_content"
+			android:id="@+id/CategorySpinner"></Spinner>
+		<Button android:layout_width="wrap_content"
+			android:layout_below="@+id/CategorySpinner" android:id="@+id/AddButton"
+			android:layout_height="wrap_content" android:text="Add"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/AddButton" android:layout_alignTop="@+id/AddButton"
+			android:id="@+id/SkipButton" android:layout_height="wrap_content"
+			android:text="Skip"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/SkipButton" android:layout_alignTop="@+id/AddButton"
+			android:id="@+id/OkButton" android:layout_height="wrap_content"
+			android:layout_below="@+id/CategorySpinner" android:text="Ok"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/OkButton" android:layout_alignTop="@+id/SkipButton"
+			android:id="@+id/CancelButton" android:layout_height="wrap_content"
+			android:layout_below="@+id/CategorySpinner" android:text="Cancel"></Button>
+	</RelativeLayout>
+</ScrollView>
