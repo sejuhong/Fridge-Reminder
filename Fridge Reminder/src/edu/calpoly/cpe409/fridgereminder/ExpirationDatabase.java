@@ -12,7 +12,21 @@ import java.util.Scanner;
 import android.content.Context;
 import android.content.res.Resources.NotFoundException;
 
+/**
+ * This class connects the app to the database online.
+ */
 public class ExpirationDatabase {
+   
+   /**
+    * With the given information this method looks up the expiration date
+    * on the database.
+    * 
+    * @param name name of the item
+    * @param context context of the activity requesting the info
+    * @return the number of expiration date
+    * @throws UnknownHostException if this method can not find the database it throws this 
+    *                              exception.
+    */
 	public static int lookUp(String name, Context context)
 			throws UnknownHostException {
 		int toReturn = -1;

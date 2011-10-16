@@ -45,6 +45,9 @@ public class AddItemHistoryActivity extends Activity {
 	private String barcodeLookupResult;
 	private int barcodeLookupCategory;
 
+	/**
+	 * This adds a new item from barcode
+	 */
 	public void addNewItemFromBarcode() {
 		Intent intent = new Intent(this, AddItemActivity.class);
 		intent.setAction(AddItemActivity.ACTION_ADD_NEW_ITEM);

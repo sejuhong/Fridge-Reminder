@@ -1,8 +1,16 @@
 package edu.calpoly.cpe409.fridgereminder;
 
+/**
+ * Enums for the different categories of product 
+ */
 public enum Category {
 	FRUIT, VEGETABLES, DAIRY, MEAT, FISH, BREADANDCEREAL, PACKAGEDFOODANDMIXES, POULTRYANDEGGS, NONE;
 
+	/**
+	 * Returns a category depending on the input
+	 * @param ordinal number to be parsed to category
+	 * @return a category
+	 */
 	public static Category parse(int ordinal) {
 		switch (ordinal) {
 		case 0:
@@ -28,6 +36,9 @@ public enum Category {
 		return null;
 	}
 
+	/**
+	 * Returns a string that represents the current category
+	 */
 	public String toString() {
 		switch (this.ordinal()) {
 		case 0:

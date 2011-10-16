@@ -6,9 +6,18 @@ import java.util.GregorianCalendar;
 
 import android.util.Log;
 
+/**
+ * Calculates the date between buy date and expiration date
+ */
 public class DateUtil {
 	public static final int MILISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
 
+	/**
+	 * Returns the length between two dates
+	 * @param start date in Date
+	 * @param end date in Date
+	 * @return the length between the two dates in long
+	 */
 	public static long daysBetween(Date start, Date end) {
 		Calendar endCal = new GregorianCalendar();
 		Calendar startCal = new GregorianCalendar();
@@ -31,6 +40,12 @@ public class DateUtil {
 				- endCal.getTimeInMillis()) / MILISECONDS_PER_DAY;
 	}
 	
+	/**
+	 * Returns the length between two dates
+	 * @param start date in Calendar
+	 * @param end date in Calendar
+	 * @return the length between the two dates in long
+	 */
 	public static long daysBetween(Calendar start, Calendar end) {
 		return daysBetween(start.getTime(), end.getTime());
 	}

@@ -27,6 +27,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+/**
+ * This class is the activity for adding a new item to the 
+ * Fridge Reminder.
+ */
 public class AddItemActivity extends Activity {
 	private static final int START_DATE_DIALOG = 10;
 	private static final int EXPIRATION_DATE_DIALOG = 11;
@@ -63,6 +67,10 @@ public class AddItemActivity extends Activity {
 	private Button cancelButton;
 	private String currentBarcode;
 
+	/**
+	 * Creates an item from the product.
+	 * @param product the info for the product
+	 */
 	private void createFormFromProduct(Product product) {
 		if (product.getCount() == -1)
 			countEditText.setText("");
@@ -90,6 +98,10 @@ public class AddItemActivity extends Activity {
 		productId = product.getId();
 	}
 
+	/**
+	 * Gets the manual input from user and creates a product
+	 * @return a product depending on the user input
+	 */
 	private Product createProductFromForm() {
 		int count = -1;
 
@@ -121,6 +133,9 @@ public class AddItemActivity extends Activity {
 		return newProduct;
 	}
 
+	/**
+	 * Creates the layout for the add item activity
+	 */
 	private void initLayout() {
 		purchaseDateButton = (Button) findViewById(R.id.PurchaseDateButton);
 		expirationDateButton = (Button) findViewById(R.id.ExpirationDateButton);
@@ -350,6 +365,9 @@ public class AddItemActivity extends Activity {
 		productId = -1;
 	}
 
+	/**
+	 * Creates an dialog to input the date of either the buy date or expiration date
+	 */
 	@Override
 	protected Dialog onCreateDialog(int id) {
 		super.onCreateDialog(id);
@@ -468,6 +486,9 @@ public class AddItemActivity extends Activity {
 		}
 	}
 
+	/**
+	 * 
+	 */
 	private void updateDateButtons() {
 		SimpleDateFormat sdf = new SimpleDateFormat("MMMM d, y");
 
@@ -486,6 +507,10 @@ public class AddItemActivity extends Activity {
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	private boolean updateToNextItem() {
 		if (batchItemsIter.hasNext()) {
 			nameEditText.setText(batchItemsIter.next());
